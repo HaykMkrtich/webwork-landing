@@ -1,0 +1,16 @@
+.wrapper {
+  width: 175px;
+  height: 42px;
+  border: 1px solid var(--var-blue);
+  border-radius: 131px;
+  color: var(--var-primary-text);
+  background: var(--var-blue);
+  text-transform: uppercase;
+  cursor: pointer;
+  &.outline {
+    background: none;
+  }
+  &.bold {
+    font-weight: 700;
+  }
+}

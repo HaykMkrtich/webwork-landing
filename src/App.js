@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Header from './components/Header';
+import CenterBlock from './components/common/CenterBlock';
+import FirstScreen from './components/FirstScreen';
+import Prices from './components/Prices';
+import Badges from './components/Badges';
+import Footer from './components/Footer/Footer';
+import Partners from './components/Partners';
+import Tabs from './components/Tabs';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <CenterBlock>
+        <Header />
+        <FirstScreen />
+        <Prices />
+      </CenterBlock>
+      <Badges />
+      <CenterBlock>
+        <Tabs />
+        <Partners />
+      </CenterBlock>
+
+      <Footer />
+    </>
   );
 }
 

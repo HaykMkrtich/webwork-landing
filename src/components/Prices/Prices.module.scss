@@ -1,0 +1,39 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  position: relative;
+  h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 39px;
+    line-height: 52px;
+  }
+  .price_cards {
+    margin-top: 112px;
+    display: flex;
+    gap: 208px;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    right: -152px;
+    top: 50px;
+    width: 396px;
+    height: 396px;
+    background: rgba(253, 119, 159, 0.1);
+    filter: blur(115px);
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    left: -152px;
+    bottom: -200px;
+    width: 480px;
+    height: 480px;
+    background: rgba(99, 133, 253, 0.1);
+    filter: blur(115px);
+  }
+}

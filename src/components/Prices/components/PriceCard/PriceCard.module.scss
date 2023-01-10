@@ -1,0 +1,115 @@
+.wrapper {
+  position: relative;
+  width: 537px;
+  height: 586px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(141, 159, 244, 0.3);
+  border-radius: 10px;
+  backdrop-filter: blur(5.5px);
+  padding: 54px 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .title {
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 52px;
+  }
+  .price {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 157px;
+    position: relative;
+  }
+  .old_price {
+    position: absolute;
+    text-align: right;
+    top: 16px;
+    left: -100px;
+    font-weight: 600;
+    font-size: 31px;
+    line-height: 58px;
+    &:after {
+      content: '';
+      position: absolute;
+      width: calc(100% + 8px);
+      left: -4px;
+      box-sizing: border-box;
+      top: 29px;
+      border-radius: 4px;
+      background: var(--var-purple);
+      border: 2.4px solid var(--var-purple);
+      transform: matrix(0.96, -0.27, -0.27, -0.96, 0, 0);
+    }
+  }
+  .price_subtitle {
+    margin-top: -30px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 59px;
+    color: rgba(255, 255, 255, 0.75);
+  }
+  .benefits {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-weight: 400;
+    width: 130px;
+    margin-top: 12px;
+    li {
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 0.007em;
+      position: relative;
+      &:before {
+        position: absolute;
+        content: '';
+        width: 24px;
+        height: 24px;
+        background: url('./assets/benefit_checkmark.svg');
+        top: calc(50% - 12px);
+        left: -30px;
+      }
+    }
+  }
+  .get_deal_btn {
+    margin-top: 52px;
+  }
+  .caption {
+    position: absolute;
+    bottom: 28px;
+    right: 38px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.007em;
+  }
+  .bonuses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding: 80px;
+    box-sizing: border-box;
+    top: -80px;
+    right: -70px;
+    width: 264px;
+    height: 247px;
+    background: url('./assets/neon_outline.png');
+    background-size: contain;
+    .bonuses_content {
+      margin-left: 20px;
+    }
+    p {
+      font-family: 'Design';
+      font-size: 50px;
+      text-align: left;
+      &.extra_bonus {
+        font-size: 39px;
+        line-height: 100%;
+      }
+    }
+  }
+}

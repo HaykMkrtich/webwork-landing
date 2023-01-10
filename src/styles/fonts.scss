@@ -1,0 +1,12 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: var(--var-primary-text);
+}
+
+@font-face {
+  font-family: 'Design';
+  src: url('../fonts/Design.woff') format('woff'), url('../fonts/Design.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

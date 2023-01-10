@@ -1,0 +1,15 @@
+@import 'reset_default_styles.scss';
+@import 'fonts.scss';
+
+:root {
+  --var-bg-blue: #100c16;
+  --var-blue: #8276ff;
+  --var-purple: #f354b4;
+  --var-primary-text: white;
+  --var-yellow-text: #ffc759;
+}
+
+body {
+  background: var(--var-bg-blue);
+  min-height: 100vh;
+}
