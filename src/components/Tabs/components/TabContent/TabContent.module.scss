@@ -1,0 +1,46 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 30px;
+  h3 {
+    font-weight: 600;
+    font-size: 39px;
+    line-height: 52px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  img {
+    margin-top: 50px;
+    height: 270px;
+    object-fit: contain;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 30px;
+    gap: 16px;
+    li {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      position: relative;
+      &:before {
+        position: absolute;
+        content: '';
+        width: 24px;
+        height: 24px;
+        background: url('../../../Prices/components/PriceCard/assets/benefit_checkmark.svg');
+        top: calc(50% - 12px);
+        left: -30px;
+      }
+    }
+  }
+  button {
+    margin-top: 40px;
+  }
+}

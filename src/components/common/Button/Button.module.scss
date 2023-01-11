@@ -1,12 +1,15 @@
 .wrapper {
-  width: 175px;
+  min-width: 175px;
+  max-width: max-content;
   height: 42px;
   border: 1px solid var(--var-blue);
   border-radius: 131px;
+  padding: 0 40px;
   color: var(--var-primary-text);
   background: var(--var-blue);
   text-transform: uppercase;
   cursor: pointer;
+  display: block;
   &.outline {
     background: none;
   }
