@@ -31,12 +31,12 @@ const tabsData = {
     },
   ],
   content: [
-    <TabContent />,
-    <TabContent />,
-    <TabContent />,
-    <TabContent />,
-    <TabContent />,
-    <TabContent />,
+    <TabContent title="Track the time your employees spend on work and get detailed information " />,
+    <TabContent title="Some other tab content title with more than 50 characters, and so on " />,
+    <TabContent title="This titles makes  each tab different, so the user can see tabs changing" />,
+    <TabContent title="Again some loooooooong title with loooooooog words" />,
+    <TabContent title="Actually here I could write just lorem ipsum, or some other not meaningless text" />,
+    <TabContent title="Lorem Ipsum is simply dummy text of the printing and typesetting industry." />,
   ],
 };
 function TabsSection() {
